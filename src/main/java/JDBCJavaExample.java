@@ -8,15 +8,13 @@ import org.apache.flink.types.Row;
 
 public class JDBCJavaExample {
 
-  public static void main(String[] args) {
-    String driverName = "com.mysql.jdbc.Driver";
-    String dbURL = "jdbc:mysql://localhost:3306/kafka";
-    String query = "select * from Student";
+  public static void main(String[] args) throws Exception {
+    String driverName = "org.apache.hive.jdbc.HiveDriver";
+    String dbURL = "jdbc:hive2://localhost:10000/default";
+    String query = "select * from interns";
 
     final TypeInformation<?>[] fieldTypes =
-        new TypeInformation<?>[] { BasicTypeInfo.INT_TYPE_INFO, BasicTypeInfo.STRING_TYPE_INFO,
-            BasicTypeInfo.STRING_TYPE_INFO, BasicTypeInfo.DOUBLE_TYPE_INFO,
-            BasicTypeInfo.INT_TYPE_INFO };
+        new TypeInformation<?>[] { BasicTypeInfo.STRING_TYPE_INFO, BasicTypeInfo.LONG_TYPE_INFO };
 
     final RowTypeInfo rowTypeInfo = new RowTypeInfo(fieldTypes);
 
@@ -27,11 +25,7 @@ public class JDBCJavaExample {
 
     DataSet<Row> source = environment.createInput(inputBuilder.finish());
 
-    try {
-      source.print();
-    } catch (Exception e) {
-      e.printStackTrace();
-    }
+    source.print();
 
   }
 

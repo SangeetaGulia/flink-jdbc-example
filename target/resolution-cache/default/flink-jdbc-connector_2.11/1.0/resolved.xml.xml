@@ -4,7 +4,7 @@
 		module="flink-jdbc-connector_2.11"
 		revision="1.0"
 		status="integration"
-		publication="20170327181739"
+		publication="20170328112817"
 	>
 		<description>
 		flink-jdbc-connector
@@ -36,11 +36,8 @@
 		<dependency org="org.scala-lang" name="scala-library" rev="2.11.8" conf="scala-tool->default,optional(default);compile->default(compile)"/>
 		<dependency org="org.apache.hive" name="hive-jdbc" rev="2.1.1" conf="compile->default(compile)"/>
 		<dependency org="org.apache.flink" name="flink-jdbc" rev="1.2.0" conf="compile->default(compile)"/>
-		<dependency org="org.apache.flink" name="flink-clients" rev="0.10.2" conf="compile->default(compile)"/>
-		<dependency org="org.apache.flink" name="flink-core" rev="1.2.0" conf="compile->default(compile)"/>
-		<dependency org="mysql" name="mysql-connector-java" rev="6.0.6" conf="compile->default(compile)"/>
 		<dependency org="org.apache.flink" name="flink-java" rev="1.2.0" conf="compile->default(compile)"/>
-		<dependency org="org.slf4j" name="slf4j-api" rev="1.7.25" conf="compile->default(compile)"/>
-		<dependency org="org.apache.logging.log4j" name="log4j-core" rev="2.8.1" conf="compile->default(compile)"/>
+		<dependency org="mysql" name="mysql-connector-java" rev="6.0.6" conf="compile->default(compile)"/>
+		<dependency org="org.apache.flink" name="flink-clients_2.10" rev="1.2.0" conf="compile->default(compile)"/>
 	</dependencies>
 </ivy-module>
