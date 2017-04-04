@@ -8,4 +8,8 @@ project/plugins/project/
 .history
 .cache
 .lib/
-.idea/
+.idea/*
+project/target/*
+project/project/target/*
+target/*
+.idea/modules.xml

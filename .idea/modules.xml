@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/flink-jdbc-connector.iml" filepath="$PROJECT_DIR$/.idea/modules/flink-jdbc-connector.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/flink-jdbc-connector-build.iml" filepath="$PROJECT_DIR$/.idea/modules/flink-jdbc-connector-build.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/flink-jdbc-example.iml" filepath="$PROJECT_DIR$/.idea/modules/flink-jdbc-example.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/flink-jdbc-example-build.iml" filepath="$PROJECT_DIR$/.idea/modules/flink-jdbc-example-build.iml" />
     </modules>
   </component>
 </project>
